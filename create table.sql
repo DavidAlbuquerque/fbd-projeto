@@ -38,3 +38,14 @@ CREATE TABLE avaliacao_risco_social (
     id_crianca INTEGER NOT NULL REFERENCES crianca_adolescente(id),
     id_profissional INTEGER NOT NULL REFERENCES profissional(id)
 );
+
+CREATE TABLE Agenda_Atendimento (
+    id SERIAL PRIMARY KEY,
+    data DATE NOT NULL,
+    hora TIME NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    frequencia VARCHAR(50) NOT NULL,
+    tipo VARCHAR(50) NOT NULL,
+    id_profissional INTEGER REFERENCES "profissional"(id) ON DELETE CASCADE,
+    id_crianca_adolescente INTEGER REFERENCES "crianca_adolescente"(id) ON DELETE CASCADE
+);

@@ -60,3 +60,16 @@ INSERT INTO avaliacao_risco_social (data, instrumento_aplicado, pontuacao, nivel
 ('2024-07-05', 'Escala C', 14, 'Moderado', 'Moradia precária, trabalho infantil', 3, 8),
 ('2024-07-10', 'Escala A', 19, 'Alto', 'Histórico de abuso, abandono', 4, 9),
 ('2024-07-15', 'Escala C', 10, 'Moderado', 'Risco de evasão escolar, depressão', 5, 10);
+
+
+INSERT INTO Agenda_Atendimento (data, hora, status, frequencia, tipo, id_profissional, id_crianca_adolescente) VALUES
+('2024-07-01', '09:00:00', 'Agendado', 'Semanal', 'Psicólogo', 6, 1),
+('2024-07-02', '10:30:00', 'Concluido', 'Mensal', 'Assistente Social', 7, 2),
+('2024-07-03', '14:00:00', 'Cancelado', 'Quizenal', 'Psicólogo', 8, 3),
+('2024-07-04', '08:00:00', 'Agendado', 'Semanal', 'Pedagogo', 9, 4),
+('2024-07-05', '15:00:00', 'Agendado', 'Mensal', 'Assistente Social', 10, 5),
+('2024-07-06', '09:30:00', 'Concluido', 'Semanal', 'Psicólogo', 16, 11),
+('2024-07-07', '13:00:00', 'Agendado', 'Quizenal', 'Assistente Social', 17, 12),
+('2024-07-08', '11:15:00', 'Agendado', 'Bimestral', 'Psicólogo', 18, 13),
+('2024-07-09', '10:00:00', 'Cancelado', 'Semanal', 'Pedagogo', 19, 14),
+('2024-07-10', '16:30:00', 'Agendado', 'Mensal', 'Assistente Social', 20, 15);
